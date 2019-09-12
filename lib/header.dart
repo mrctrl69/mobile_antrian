@@ -8,8 +8,9 @@ Widget header(title) {
     title: Text(
       title,
       style: TextStyle(
-        color: Colors.red
+        color: Colors.red,
         // fontWeight: FontWeight.
+        fontSize: 30
       ),
     ),
     actions: <Widget>[

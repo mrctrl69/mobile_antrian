@@ -49,18 +49,20 @@ class _MyHomePageState extends State<HomePage> {
   ];
 
   final headerstyle = TextStyle(
-      color: Colors.pink[200],
-      fontFamily: 'Bebas',
-      fontWeight: FontWeight.bold,
-      fontSize: 16.0,
-      letterSpacing: 0.5);
+    color: Colors.pink[200],
+    fontFamily: 'Bebas',
+    fontWeight: FontWeight.bold,
+    fontSize: 16.0,
+    letterSpacing: 0.5
+  );
 
   final header2style = TextStyle(
-      color: Colors.black,
-      fontFamily: 'Bebas',
-      fontWeight: FontWeight.bold,
-      fontSize: 16.0,
-      letterSpacing: 0.5);
+    color: Colors.black,
+    fontFamily: 'Bebas',
+    fontWeight: FontWeight.bold,
+    fontSize: 16.0,
+    letterSpacing: 0.5
+  );
 
   String title = "Antri Skuy";
 
@@ -75,9 +77,9 @@ class _MyHomePageState extends State<HomePage> {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: <Widget>[
                     Container(
-                      padding: EdgeInsets.fromLTRB(15.0, 20.0, 0.0, 15.0),
+                      padding: EdgeInsets.fromLTRB(15.0, 20.0, 0.0, 0.0),
                       child: Text(
-                        'Antrian Populer :',
+                        'ANTRIAN TERAKHIR',
                         style: headerstyle,
                       ),
                     ),
@@ -109,10 +111,13 @@ class _MyHomePageState extends State<HomePage> {
                                         elevation: 3.0,
                                       ),
                                     ),
-                                    Text(
-                                      populer[i],
-                                      style: TextStyle(color: Colors.black),
-                                      textAlign: TextAlign.center,
+                                    Container(
+                                      margin: const EdgeInsets.only(left: 5.0),
+                                      child: Text(
+                                        populer[i],
+                                        style: TextStyle(color: Colors.black),
+                                        textAlign: TextAlign.center,
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -124,155 +129,66 @@ class _MyHomePageState extends State<HomePage> {
                     ),
                     SizedBox(height: 25),
                     Container(
-                      alignment: Alignment.center,
-                      padding: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 0.0),
-                      child: Text('POLISI',
-                          style: TextStyle(
-                              fontFamily: 'Bebas',
-                              color: Colors.black,
-                              fontWeight: FontWeight.bold,
-                              letterSpacing: 1,
-                              fontSize: 20)),
-                    ),
-                    Container(
-                      height: 125.0,
-                      child: ListView(
-                        scrollDirection: Axis.horizontal,
-                        children: <Widget>[
-                          Container(
-                            child: Row(
-                              children: <Widget>[
-                                SizedBox(height: 20.0),
-                                Container(
-                                  padding: EdgeInsets.all(5.0),
-                                  margin: const EdgeInsets.only(left: 10.0),
-                                  height: 105.0,
-                                  width: 105.0,
-                                  child: Material(
-                                    borderRadius: BorderRadius.circular(10.0),
-                                    shadowColor: Colors.pinkAccent,
-                                    color: Colors.white,
-                                    elevation: 3.0,
-                                    child: GestureDetector(
-                                      onTap: () {
-                                        Navigator.push(
-                                            context,
-                                            MaterialPageRoute(
-                                                builder: (context) =>
-                                                    IsiSimPoldaBali()));
-                                      },
-                                      child: Center(
-                                        child: Text(
-                                          'Pelayanan  SIM',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(color: Colors.black),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(height: 20.0),
-                                Container(
-                                  padding: EdgeInsets.all(5.0),
-                                  height: 105.0,
-                                  width: 105.0,
-                                  child: Material(
-                                    borderRadius: BorderRadius.circular(10.0),
-                                    shadowColor: Colors.pinkAccent,
-                                    color: Colors.white,
-                                    elevation: 3.0,
-                                    child: GestureDetector(
-                                      onTap: () {
-                                        Null;
-                                      },
-                                      child: Center(
-                                        child: Text(
-                                          'Pelayanan SKCK',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              color: Colors.black,
-                                              fontFamily: 'Roboto'),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(height: 20.0),
-                                Container(
-                                  padding: EdgeInsets.all(5.0),
-                                  height: 105.0,
-                                  width: 105.0,
-                                  child: Material(
-                                    borderRadius: BorderRadius.circular(10.0),
-                                    shadowColor: Colors.pinkAccent,
-                                    color: Colors.white,
-                                    elevation: 3.0,
-                                    child: GestureDetector(
-                                      onTap: () {
-                                        Null;
-                                      },
-                                      child: Center(
-                                        child: Text(
-                                          'Pelayanan Pengaduan Masyarakat',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                            color: Colors.black,
-                                            fontFamily: 'Roboto',
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                ),
-                                SizedBox(height: 20.0),
-                                Container(
-                                  padding: EdgeInsets.all(5.0),
-                                  margin: const EdgeInsets.only(right: 10.0),
-                                  height: 105.0,
-                                  width: 105.0,
-                                  child: Material(
-                                    borderRadius: BorderRadius.circular(10.0),
-                                    shadowColor: Colors.pinkAccent,
-                                    color: Colors.white,
-                                    elevation: 3.0,
-                                    child: GestureDetector(
-                                      onTap: () {
-                                        Null;
-                                      },
-                                      child: Center(
-                                        child: Text(
-                                          'Pelayanan Tilang',
-                                          textAlign: TextAlign.center,
-                                          style: TextStyle(
-                                              color: Colors.black,
-                                              fontFamily: 'Roboto'),
-                                        ),
-                                      ),
-                                    ),
-                                  ),
-                                )
-                              ],
-                            ),
-                          ),
-                        ],
+                      padding: EdgeInsets.fromLTRB(15.0, 20.0, 0.0, 0.0),
+                      child: Text(
+                        'ANTRIAN POPULER',
+                        style: headerstyle,
                       ),
                     ),
                     Container(
-                        child: Row(
-                            crossAxisAlignment: CrossAxisAlignment.start,
+                      height: 150.0,
+                      child: ListView.builder(
+                        scrollDirection: Axis.horizontal,
+                        shrinkWrap: true,
+                        itemCount: populer.length,
+                        itemBuilder: (BuildContext context, int i) {
+                          return Column(
                             children: <Widget>[
-                          Container(
-                            padding: EdgeInsets.fromLTRB(15.0, 20.0, 0.0, 0.0),
-                            child: Text(
-                              'Kategori Antrian :',
-                              style: headerstyle,
-                            ),
-                          ),
-                        ]
-                      )
+                              SizedBox(height: 20.0),
+                              GestureDetector(
+                                onTap: () {
+                                  Null;
+                                },
+                                child: Column(
+                                  children: <Widget>[
+                                    Container(
+                                      padding: EdgeInsets.all(5.0),
+                                      margin: const EdgeInsets.only(left: 5.0),
+                                      height: 105.0,
+                                      width: 105.0,
+                                      child: Material(
+                                        borderRadius: BorderRadius.circular(10.0),
+                                        shadowColor: Colors.pinkAccent,
+                                        color: Colors.white,
+                                        elevation: 3.0,
+                                      ),
+                                    ),
+                                    Container(
+                                      margin: const EdgeInsets.only(left: 5.0),
+                                      child: Text(
+                                        populer[i],
+                                        style: TextStyle(color: Colors.black),
+                                        textAlign: TextAlign.center,
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ],
+                          );
+                        },
+                      ),
+                    ),
+                    SizedBox(height: 25),
+                    Container(
+                      padding: EdgeInsets.fromLTRB(15.0, 20.0, 0.0, 0.0),
+                      child: Text(
+                        'KATEGORI',
+                        style: headerstyle,
+                      ),
                     ),
                     Container(
-                      margin: EdgeInsets.only(bottom: 50),
+                      margin: EdgeInsets.only(bottom: 25),
                       child: GridView.builder(
                         shrinkWrap: true,
                         primary: false,
