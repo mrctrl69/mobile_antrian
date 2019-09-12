@@ -24,7 +24,7 @@ Widget header(title) {
   );
 }
 
-style1() {
+heading1() {
   return TextStyle(
     color: Colors.pink[200],
     fontFamily: 'Bebas',
@@ -34,7 +34,7 @@ style1() {
   );
 }
 
-style2() {
+heading2() {
   return TextStyle(
     color: Colors.black,
     fontFamily: 'Bebas',

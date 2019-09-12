@@ -62,7 +62,7 @@ class _MyHomePageState extends State<HomePage> {
                       padding: EdgeInsets.fromLTRB(15.0, 20.0, 0.0, 0.0),
                       child: Text(
                         'ANTRIAN TERAKHIR',
-                        style: style1(),
+                        style: heading1(),
                       ),
                     ),
                     Container(
@@ -112,7 +112,7 @@ class _MyHomePageState extends State<HomePage> {
                       padding: EdgeInsets.fromLTRB(15.0, 20.0, 0.0, 0.0),
                       child: Text(
                         'ANTRIAN POPULER',
-                        style: style1(),
+                        style: heading1(),
                       ),
                     ),
                     Container(
@@ -162,7 +162,7 @@ class _MyHomePageState extends State<HomePage> {
                       padding: EdgeInsets.fromLTRB(15.0, 20.0, 0.0, 0.0),
                       child: Text(
                         'KATEGORI',
-                        style: style1(),
+                        style: heading1(),
                       ),
                     ),
                     Container(
