@@ -23,3 +23,23 @@ Widget header(title) {
     ],
   );
 }
+
+style1() {
+  return TextStyle(
+    color: Colors.pink[200],
+    fontFamily: 'Bebas',
+    fontWeight: FontWeight.bold,
+    fontSize: 16.0,
+    letterSpacing: 0.5
+  );
+}
+
+style2() {
+  return TextStyle(
+    color: Colors.black,
+    fontFamily: 'Bebas',
+    fontWeight: FontWeight.bold,
+    fontSize: 16.0,
+    letterSpacing: 0.5
+  );
+}

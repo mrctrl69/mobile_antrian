@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:home_ui/account.dart';
-import 'package:home_ui/header.dart';
+import 'package:home_ui/style.dart';
 import 'package:home_ui/isikategorikepolisian.dart';
 import 'package:home_ui/isisimpoldabali.dart';
 
@@ -48,28 +48,10 @@ class _MyHomePageState extends State<HomePage> {
     'Dokter/Bidan',
   ];
 
-  final headerstyle = TextStyle(
-    color: Colors.pink[200],
-    fontFamily: 'Bebas',
-    fontWeight: FontWeight.bold,
-    fontSize: 16.0,
-    letterSpacing: 0.5
-  );
-
-  final header2style = TextStyle(
-    color: Colors.black,
-    fontFamily: 'Bebas',
-    fontWeight: FontWeight.bold,
-    fontSize: 16.0,
-    letterSpacing: 0.5
-  );
-
-  String title = "Antri Skuy";
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: header(title),
+        appBar: header(widget.title),
         body: Container(
           color: Colors.white,
           child: SingleChildScrollView(
@@ -80,7 +62,7 @@ class _MyHomePageState extends State<HomePage> {
                       padding: EdgeInsets.fromLTRB(15.0, 20.0, 0.0, 0.0),
                       child: Text(
                         'ANTRIAN TERAKHIR',
-                        style: headerstyle,
+                        style: style1(),
                       ),
                     ),
                     Container(
@@ -93,10 +75,8 @@ class _MyHomePageState extends State<HomePage> {
                           return Column(
                             children: <Widget>[
                               SizedBox(height: 20.0),
-                              GestureDetector(
-                                onTap: () {
-                                  Null;
-                                },
+                              InkWell(
+                                onTap: () {},
                                 child: Column(
                                   children: <Widget>[
                                     Container(
@@ -132,7 +112,7 @@ class _MyHomePageState extends State<HomePage> {
                       padding: EdgeInsets.fromLTRB(15.0, 20.0, 0.0, 0.0),
                       child: Text(
                         'ANTRIAN POPULER',
-                        style: headerstyle,
+                        style: style1(),
                       ),
                     ),
                     Container(
@@ -145,10 +125,8 @@ class _MyHomePageState extends State<HomePage> {
                           return Column(
                             children: <Widget>[
                               SizedBox(height: 20.0),
-                              GestureDetector(
-                                onTap: () {
-                                  Null;
-                                },
+                              InkWell(
+                                onTap: () {},
                                 child: Column(
                                   children: <Widget>[
                                     Container(
@@ -184,7 +162,7 @@ class _MyHomePageState extends State<HomePage> {
                       padding: EdgeInsets.fromLTRB(15.0, 20.0, 0.0, 0.0),
                       child: Text(
                         'KATEGORI',
-                        style: headerstyle,
+                        style: style1(),
                       ),
                     ),
                     Container(

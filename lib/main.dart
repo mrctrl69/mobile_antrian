@@ -16,9 +16,9 @@ class MyApp extends StatefulWidget{
 class MyAppState extends State<MyApp>{
   int _selectedPage = 0;
   final _pageOptions = [
-    HomePage(),
-    ListPage(),
-    AccountPage(),
+    HomePage(title: "Home"),
+    ListPage(title: "Daftar Antrian"),
+    AccountPage(title: "Akun"),
 
   ];
   @override
