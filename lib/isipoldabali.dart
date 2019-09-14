@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_ui/style.dart';
 import 'isisimpoldabali.dart';
 
 class IsiPoldaBali extends StatefulWidget {
@@ -9,27 +10,6 @@ class IsiPoldaBali extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
-
-final headerAppBarstyle = TextStyle(
-    color: Colors.white,
-    fontFamily: 'Bebas',
-    fontWeight: FontWeight.bold,
-    fontSize: 20.0,
-    letterSpacing: 1);
-
-final headerstyle = TextStyle(
-    color: Colors.pink[200],
-    fontFamily: 'Bebas',
-    fontWeight: FontWeight.bold,
-    fontSize: 16.0,
-    letterSpacing: 0.5);
-
-final header2style = TextStyle(
-    color: Colors.black,
-    fontFamily: 'Bebas',
-    fontWeight: FontWeight.bold,
-    fontSize: 16.0,
-    letterSpacing: 0.5);
 
 class _MyHomePageState extends State<IsiPoldaBali> {
   int _counter = 0;
@@ -46,7 +26,7 @@ class _MyHomePageState extends State<IsiPoldaBali> {
       appBar: new AppBar(
           title: Text(
         'POLDA BALI',
-        style: headerAppBarstyle,
+        style: headerAppBarstyle(),
       )),
       body: SingleChildScrollView(
         child: Column(

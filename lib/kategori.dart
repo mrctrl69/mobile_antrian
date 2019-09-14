@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:home_ui/style.dart';
 
 class CategoryPage extends StatefulWidget {
   CategoryPage({Key key, this.title}) : super(key: key);
@@ -19,27 +20,6 @@ class _MyHomePageState extends State<CategoryPage> {
     });
   }
 
-  final headerstyle = TextStyle(
-      color: Colors.pink[200],
-      fontFamily: 'Bebas',
-      fontWeight: FontWeight.bold,
-      fontSize: 16.0,
-      letterSpacing: 0.5);
-
-  final header2style = TextStyle(
-      color: Colors.black,
-      fontFamily: 'Bebas',
-      fontWeight: FontWeight.bold,
-      fontSize: 16.0,
-      letterSpacing: 0.5);
-
-  final header3style = TextStyle(
-      color: Colors.black,
-      fontFamily: 'Bebas',
-      fontWeight: FontWeight.bold,
-      fontSize: 24.0,
-      letterSpacing: 1);
-
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -48,7 +28,7 @@ class _MyHomePageState extends State<CategoryPage> {
             padding: const EdgeInsets.all(8.0),
             child: Text(
               'DOKTER',
-              style: header3style,
+              style: heading1(),
             ),
           ),
           // actions: <Widget>[
@@ -67,7 +47,7 @@ class _MyHomePageState extends State<CategoryPage> {
                 padding: EdgeInsets.all(20.0),
                 child: Text(
                   'Antrian Dokter :',
-                  style: headerstyle,
+                  style: heading1(),
                 ),
               ),
               Container(

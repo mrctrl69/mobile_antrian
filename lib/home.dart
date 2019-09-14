@@ -51,7 +51,7 @@ class _MyHomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: header(widget.title),
+        appBar: search(widget.title),
         body: Container(
           color: Colors.white,
           child: SingleChildScrollView(
@@ -86,7 +86,7 @@ class _MyHomePageState extends State<HomePage> {
                                       width: 105.0,
                                       child: Material(
                                         borderRadius: BorderRadius.circular(10.0),
-                                        shadowColor: Colors.pinkAccent,
+                                        shadowColor: Colors.redAccent,
                                         color: Colors.white,
                                         elevation: 3.0,
                                       ),
@@ -136,7 +136,7 @@ class _MyHomePageState extends State<HomePage> {
                                       width: 105.0,
                                       child: Material(
                                         borderRadius: BorderRadius.circular(10.0),
-                                        shadowColor: Colors.pinkAccent,
+                                        shadowColor: Colors.redAccent,
                                         color: Colors.white,
                                         elevation: 3.0,
                                       ),
@@ -184,7 +184,7 @@ class _MyHomePageState extends State<HomePage> {
                                   width: 105.0,
                                   child: Material(
                                     borderRadius: BorderRadius.circular(100.0),
-                                    shadowColor: Colors.pinkAccent,
+                                    shadowColor: Colors.redAccent,
                                     color: Colors.white,
                                     elevation: 3.0,
                                     child: GestureDetector(

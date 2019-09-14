@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:home_ui/style.dart';
 import 'list.dart';
 
 class AmbilAntrian extends StatefulWidget {
@@ -20,27 +21,6 @@ class _MyHomePageState extends State<AmbilAntrian> {
     });
   }
 
-  final headerAppBarstyle = TextStyle(
-      color: Colors.white,
-      fontFamily: 'Bebas',
-      fontWeight: FontWeight.bold,
-      fontSize: 20.0,
-      letterSpacing: 1);
-
-  final headerstyle = TextStyle(
-      color: Colors.pink[200],
-      fontFamily: 'Bebas',
-      fontWeight: FontWeight.bold,
-      fontSize: 16.0,
-      letterSpacing: 0.5);
-
-  final header2style = TextStyle(
-      color: Colors.black,
-      fontFamily: 'Bebas',
-      fontWeight: FontWeight.bold,
-      fontSize: 16.0,
-      letterSpacing: 0.5);
-
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -49,7 +29,7 @@ class _MyHomePageState extends State<AmbilAntrian> {
               padding: const EdgeInsets.all(8.0),
               child: Text(
                 'AMBIL ANTRIAN',
-                style: headerAppBarstyle,
+                style: headerAppBarstyle(),
               )),
         ),
         body: SingleChildScrollView(
@@ -61,7 +41,7 @@ class _MyHomePageState extends State<AmbilAntrian> {
                   children: <Widget>[
                     Text(
                       'Pilih Tanggal',
-                      style: header2style,
+                      style: heading2(),
                     ),
                     TextField(
                       cursorColor: Colors.white,
@@ -83,7 +63,7 @@ class _MyHomePageState extends State<AmbilAntrian> {
                   children: <Widget>[
                     Text(
                       'Pilih Jam',
-                      style: header2style,
+                      style: heading2(),
                     ),
                     TextField(
                       cursorColor: Colors.white,

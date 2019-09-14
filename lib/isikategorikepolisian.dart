@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:home_ui/isipoldabali.dart';
+import 'package:home_ui/style.dart';
 
 class IsiKategoriKepolisian extends StatefulWidget {
   IsiKategoriKepolisian({Key key, this.title}) : super(key: key);
@@ -9,20 +10,6 @@ class IsiKategoriKepolisian extends StatefulWidget {
   @override
   _MyHomePageState createState() => _MyHomePageState();
 }
-
-final headerAppBarstyle = TextStyle(
-    color: Colors.white,
-    fontFamily: 'Bebas',
-    fontWeight: FontWeight.bold,
-    fontSize: 20.0,
-    letterSpacing: 1);
-
-final headerstyle = TextStyle(
-    color: Colors.pink[200],
-    fontFamily: 'Bebas',
-    fontWeight: FontWeight.bold,
-    fontSize: 16.0,
-    letterSpacing: 0.5);
 
 class _MyHomePageState extends State<IsiKategoriKepolisian> {
   int _counter = 0;
@@ -39,7 +26,7 @@ class _MyHomePageState extends State<IsiKategoriKepolisian> {
       appBar: new AppBar(
           title: Text(
         'KEPOLISIAN',
-        style: headerAppBarstyle,
+        style: headerAppBarstyle(),
       )),
       body: SingleChildScrollView(
         child: Column(
@@ -49,7 +36,7 @@ class _MyHomePageState extends State<IsiKategoriKepolisian> {
               padding: EdgeInsets.only(top: 15.0, left: 15.0, bottom: 25.0),
               child: Text(
                 'Lokasi :',
-                style: headerstyle,
+                style: heading1(),
               ),
             ),
             new Container(

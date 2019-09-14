@@ -16,7 +16,7 @@ class MyApp extends StatefulWidget{
 class MyAppState extends State<MyApp>{
   int _selectedPage = 0;
   final _pageOptions = [
-    HomePage(title: "Home"),
+    HomePage(title: "Ngantri Skuy"),
     ListPage(title: "Daftar Antrian"),
     AccountPage(title: "Akun"),
 
@@ -25,7 +25,7 @@ class MyAppState extends State<MyApp>{
   Widget build(BuildContext context){
     return MaterialApp(
       theme: ThemeData(
-        primarySwatch: Colors.pink,
+        primarySwatch: Colors.red,
         fontFamily: 'Lato',
       ),
       home: Scaffold(
