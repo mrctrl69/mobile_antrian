@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:home_ui/isisimpolresdenpasar.dart';
 import 'package:home_ui/style.dart';
-import 'isisimpoldabali.dart';
+import 'isisimpolresdenpasar.dart';
 
-class IsiPoldaBali extends StatefulWidget {
-  IsiPoldaBali({Key key, this.title}) : super(key: key);
+class IsiPolresDenpasar extends StatefulWidget {
+  IsiPolresDenpasar({Key key, this.title}) : super(key: key);
 
   final String title;
 
@@ -11,7 +12,7 @@ class IsiPoldaBali extends StatefulWidget {
   _MyHomePageState createState() => _MyHomePageState();
 }
 
-class _MyHomePageState extends State<IsiPoldaBali> {
+class _MyHomePageState extends State<IsiPolresDenpasar> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -45,7 +46,7 @@ class _MyHomePageState extends State<IsiPoldaBali> {
                       // margin: new EdgeInsets.symmetric(
                       //     horizontal: 5.0, vertical: 15.0),
                       child: Image.asset(
-                          'assets/img/kepolisian/polda/polda1.jpeg',
+                          'assets/img/kepolisian/polres denpasar.jpeg',
                           fit: BoxFit.fill),
                     ),
                   ),
@@ -73,7 +74,7 @@ class _MyHomePageState extends State<IsiPoldaBali> {
                               Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => IsiSimPoldaBali(title: 'Pelayanan SIM')));
+                                      builder: (context) => IsiSimPolresDenpasar(title: 'Pelayanan SIM')));
                             },
                           ),
                         )
@@ -154,7 +155,7 @@ class _MyHomePageState extends State<IsiPoldaBali> {
                 child: Column(
                   children: <Widget>[
                     Text('Tentang:'),
-                    Text('deskripsi singkat Polda Bali')
+                    Text('deskripsi singkat Polresta Denpasar')
                   ],
                 ),
               )

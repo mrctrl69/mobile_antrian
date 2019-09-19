@@ -19,18 +19,17 @@ class _MyHomePageState extends State<AccountPage> {
     });
   }
 
-  List<String> tombolakun = ['Keluar', 'Pengaturan'];
+  List<String> tombolakun = ['Keluar'];
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: header(widget.title),
-      body: Container(
-        height: 600,
-        color: Colors.white,
-        child: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
+        appBar: header(widget.title),
+        body: Container(
+            height: 600,
+            color: Colors.white,
+            child: SingleChildScrollView(
+                child: Column(children: <Widget>[
               Container(
                 margin: EdgeInsets.only(top: 10.0),
                 child: Column(
@@ -74,51 +73,37 @@ class _MyHomePageState extends State<AccountPage> {
                   ),
                 ),
               ),
-              Container(
-                height: 150.0,
-                child: ListView.builder(
-                  scrollDirection: Axis.horizontal,
-                  itemCount: tombolakun.length,
-                  itemBuilder: (BuildContext context, int i) {
-                    return Column(
-                      children: <Widget>[
-                        SizedBox(height: 20.0),
-                        InkWell(
-                          onTap: () {},
-                          child: Column(
-                            children: <Widget>[
-                              Container(
-                                padding: EdgeInsets.all(5.0),
-                                margin: const EdgeInsets.only(left: 5.0),
-                                height: 80.0,
-                                width: 80.0,
-                                child: Material(
-                                  borderRadius: BorderRadius.circular(10.0),
-                                  shadowColor: Colors.redAccent,
-                                  color: Colors.white,
-                                  elevation: 3.0,
-                                ),
-                              ),
-                              Container(
-                                margin: const EdgeInsets.only(left: 5.0),
-                                child: Text(
-                                  tombolakun[i],
-                                  style: TextStyle(color: Colors.black),
-                                  textAlign: TextAlign.center,
-                                ),
-                              ),
-                            ],
-                          ),
+              Center(
+                  child: Column(children: <Widget>[
+                SizedBox(height: 20.0),
+                InkWell(
+                  onTap: () {},
+                  child: Column(
+                    children: <Widget>[
+                      Container(
+                        padding: EdgeInsets.all(5.0),
+                        margin: const EdgeInsets.only(left: 5.0),
+                        height: 80.0,
+                        width: 80.0,
+                        child: Material(
+                          borderRadius: BorderRadius.circular(10.0),
+                          shadowColor: Colors.redAccent,
+                          color: Colors.white,
+                          elevation: 3.0,
                         ),
-                      ],
-                    );
-                  },
+                      ),
+                      Container(
+                        margin: const EdgeInsets.only(left: 5.0),
+                        child: Text(
+                          'Keluar',
+                          style: TextStyle(color: Colors.black),
+                          textAlign: TextAlign.center,
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
+              ]))
+            ]))));
   }
 }

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:home_ui/isikategorikepolisian.dart';
 
 import 'home.dart';
 import 'list.dart';
@@ -16,9 +17,10 @@ class MyApp extends StatefulWidget{
 class MyAppState extends State<MyApp>{
   int _selectedPage = 0;
   final _pageOptions = [
-    HomePage(title: "Ngantri Skuy"),
+    HomePage(title: "SakuAntri"),
     ListPage(title: "Daftar Antrian"),
     AccountPage(title: "Akun"),
+    IsiKategoriKepolisian(title: "Kepolisian")
 
   ];
   @override

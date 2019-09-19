@@ -68,7 +68,7 @@ class _MyHomePageState extends State<ListPage> {
                                             textAlign: TextAlign.left,
                                           ),
                                           Text(
-                                            'Pembuatan SKCK',
+                                            'Pelayanan SIM',
                                             style: miringstyle(),
                                             textAlign: TextAlign.left,
                                           ),
@@ -138,7 +138,7 @@ class _MyHomePageState extends State<ListPage> {
                                             textAlign: TextAlign.left,
                                           ),
                                           Text(
-                                            'Pembuatan SKCK',
+                                            'Pelayanan SIM',
                                             style: miringstyle(),
                                             textAlign: TextAlign.left,
                                           ),

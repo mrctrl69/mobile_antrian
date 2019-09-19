@@ -23,79 +23,75 @@ class _MyHomePageState extends State<AmbilAntrian> {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-        appBar: new AppBar(
-          title: Padding(
-              padding: const EdgeInsets.all(8.0),
-              child: Text(
-                'AMBIL ANTRIAN',
-                style: headerAppBarstyle(),
-              )),
-        ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-              Container(
-                margin: EdgeInsets.all(20.0),
-                child: Column(
-                  children: <Widget>[
-                    Text(
-                      'Pilih Tanggal',
-                      style: heading2(),
-                    ),
-                    TextField(
-                      cursorColor: Colors.white,
-                      onChanged: (value) {},
-                      // controller: editingController,
-                      decoration: InputDecoration(
-                          labelStyle: TextStyle(color: Colors.white),
-                          border: OutlineInputBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(15.0)))),
-                    ),
-                  ],
-                ),
-              ),
-
-              Container(
-                margin: EdgeInsets.all(20.0),
-                child: Column(
-                  children: <Widget>[
-                    Text(
-                      'Pilih Jam',
-                      style: heading2(),
-                    ),
-                    TextField(
-                      cursorColor: Colors.white,
-                      onChanged: (value) {},
-                      // controller: editingController,
-                      decoration: InputDecoration(
-                          labelStyle: TextStyle(color: Colors.white),
-                          border: OutlineInputBorder(
-                              borderRadius:
-                                  BorderRadius.all(Radius.circular(15.0)))),
-                    ),
+    return Scaffold(
+        appBar: header(widget.title),
+        body: Container(
+          color: Colors.white,
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
                 Container(
                   margin: EdgeInsets.all(20.0),
-                  child: RaisedButton(
-                          color: Colors.pink[100],
-                          child: Text(
-                            'Ambil antrian',
-                            textAlign: TextAlign.center,
-                            style: TextStyle(color: Colors.black),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => ListPage()));
-                          },
-                        ),
-                )
-                  ],
+                  child: Column(
+                    children: <Widget>[
+                      Text(
+                        'Pilih Tanggal',
+                        style: heading2(),
+                      ),
+                      TextField(
+                        cursorColor: Colors.white,
+                        onChanged: (value) {},
+                        // controller: editingController,
+                        decoration: InputDecoration(
+                            labelStyle: TextStyle(color: Colors.white),
+                            border: OutlineInputBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(15.0)))),
+                      ),
+                    ],
+                  ),
                 ),
-              )
-            ],
+
+                Container(
+                  margin: EdgeInsets.all(20.0),
+                  child: Column(
+                    children: <Widget>[
+                      Text(
+                        'Pilih Jam',
+                        style: heading2(),
+                      ),
+                      TextField(
+                        cursorColor: Colors.white,
+                        onChanged: (value) {},
+                        // controller: editingController,
+                        decoration: InputDecoration(
+                            labelStyle: TextStyle(color: Colors.white),
+                            border: OutlineInputBorder(
+                                borderRadius:
+                                    BorderRadius.all(Radius.circular(15.0)))),
+                      ),
+                  Container(
+                    margin: EdgeInsets.all(20.0),
+                    child: RaisedButton(
+                            color: Colors.red,
+                            child: Text(
+                              'Ambil antrian',
+                              textAlign: TextAlign.center,
+                              style: TextStyle(color: Colors.black),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (context) => ListPage(title: 'Daftar Antrian',)));
+                            },
+                          ),
+                  )
+                    ],
+                  ),
+                )
+              ],
+            ),
           ),
         ));
   }

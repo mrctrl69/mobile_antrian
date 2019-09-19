@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
-import 'package:home_ui/account.dart';
 import 'package:home_ui/style.dart';
 import 'package:home_ui/isikategorikepolisian.dart';
-import 'package:home_ui/isisimpoldabali.dart';
 
 class HomePage extends StatefulWidget {
   HomePage({Key key, this.title}) : super(key: key);
@@ -193,7 +191,7 @@ class _MyHomePageState extends State<HomePage> {
                                             context,
                                             MaterialPageRoute(
                                                 builder: (context) =>
-                                                    IsiSimPoldaBali()));
+                                                    IsiKategoriKepolisian(title: 'Kepolisian',)));
                                       },
                                       child: Icon(Icons.account_box),
                                     ),
