@@ -193,7 +193,12 @@ class _MyHomePageState extends State<HomePage> {
                                                 builder: (context) =>
                                                     IsiKategoriKepolisian(title: 'Kepolisian',)));
                                       },
-                                      child: Icon(Icons.account_box),
+                                      // child: Icon(Icons.account_box),
+                                      child: Image.asset(
+                                        'assets/img/icons/hospital.png',
+                                        height: 10,
+                                        width: 10,
+                                      ),
                                     ),
                                   ),
                                 ),
